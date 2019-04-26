@@ -20,9 +20,9 @@ after_success:
   - echo "$DOCKER_PWD" | docker login -u "$DOCKER_ID" --password-stdin
   # Push docker images to docker id.
   - docker push mayankmaria/multi-client
-  - docker puch mayankmaria/multi-nginx
-  - docker puch mayankmaria/multi-server
-  - docker puch mayankmaria/multi-worker
+  - docker push mayankmaria/multi-nginx
+  - docker push mayankmaria/multi-server
+  - docker push mayankmaria/multi-worker
 
 
 
