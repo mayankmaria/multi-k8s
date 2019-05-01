@@ -28,22 +28,22 @@ after_success:
 
 
 # use this setting to deploy on aws
-deploy:
+#deploy:
   # this provider configuration is OOTB provided by travis ci
-  provider: elasticbeanstalk
+#  provider: elasticbeanstalk
   # this is part of the elastic url
-  region: "us-west-2"
+#  region: "us-west-2"
   # name of the application created in aws
-  app: "multi-docker"
+#  app: "multi-docker"
   # env name in aws
-  env: "MultiDocker-env"
+#  env: "MultiDocker-env"
   # copies the files from github and paste them in s3 bucket of aws
-  bucket_name: "elasticbeanstalk-us-west-2-036834467397"
+#  bucket_name: "elasticbeanstalk-us-west-2-036834467397"
   # same as app name .. but will be listed in s3 storage
-  bucket_path: "docker-multi"
+#  bucket_path: "docker-multi"
   # only when master branch change happen deply in aws
-  on:
-    branch: master
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: "$AWS_SECRET_KEY"
+#  on:
+#    branch: master
+#  access_key_id: $AWS_ACCESS_KEY
+#  secret_access_key:
+#    secure: "$AWS_SECRET_KEY"
