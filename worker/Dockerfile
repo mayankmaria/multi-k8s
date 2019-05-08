@@ -1,9 +1,6 @@
 FROM node:alpine
-WORKDIR /app
+WORKDIR "/app"
 COPY ./package.json ./
 RUN npm install
-COPY ./ ./
-# Dev defined development docker
-#CMD ["npm", "run", "dev"]
-# Production defined start script
+COPY . .
 CMD ["npm", "run", "start"]
